@@ -37,10 +37,6 @@ def main(config):
 
   weekday = humanize.time_format("EEEE", date)
 
-  clue = "Retro-style display that keeps you guessing"
-  answer = "TIDBYT"
-  weekday = "Sunday"
-
   title = "%s (%s)" % (weekday, len(answer))
 
   title_font = "CG-pixel-3x5-mono"
