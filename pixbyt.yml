@@ -1,0 +1,14 @@
+jobs:
+- name: crossword
+  tasks:
+  - tap-pixlet--crossword target-tidbyt
+- name: crossword--webp
+  tasks:
+  - tap-pixlet--crossword target-webp
+
+plugins:
+  extractors:
+  - name: tap-pixlet--crossword
+    inherit_from: tap-pixlet
+    config:
+      path: apps/crossword
